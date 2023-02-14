@@ -11,4 +11,13 @@ For that reason, we've created a custom domain for you guys to put your project
 2. Clone this repository https://github.com/iaac-macad/bimsc23-datamgmt-session04/
 3. Create a folder with YourName
 4. Upload your code in that folder
-5. you should be able to run your compute project in github.io/iaac-macad/{YourName}
+5. update this readme.md (below) in the root with your example
+
+
+you should be able to run your compute project in `http:www.datamgmt.com/{YourFolder}`
+
+
+#### List of Contents:
+
+* [Example 5](http://www.data-mgmt.com/example5/): Shows that compute works in github pages
+* [Your Name](http://www.data-mgmt.com/{yourfolder}/): Shows that compute works in github pages
