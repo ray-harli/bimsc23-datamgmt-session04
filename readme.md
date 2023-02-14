@@ -5,7 +5,7 @@ Due to recent security updates in github pages and compute, it's not possible to
 
 For that reason, we've created a custom domain for you guys to put your project:
 
-**http://www.datamgmt.com/***
+**http://www.data-mgmt.com/**
 
 ### Instructions to collaborate in this repostory
 
