@@ -3,7 +3,9 @@
 
 Due to recent security updates in github pages and compute, it's not possible to run compute from a github pages site without a custom domain. ([Thanks James](https://iaac-macad.slack.com/team/U044RJ2RFLM) 😉)
 
-For that reason, we've created a custom domain for you guys to put your project
+For that reason, we've created a custom domain for you guys to put your project:
+
+**http://www.datamgmt.com/***
 
 ### Instructions to collaborate in this repostory
 
@@ -14,7 +16,8 @@ For that reason, we've created a custom domain for you guys to put your project
 5. update this readme.md (below) in the root with your example
 
 
-you should be able to run your compute project in `http:www.datamgmt.com/{YourFolder}`
+you should be able to run your compute project in `http://www.datamgmt.com/{YourFolder}`
+- note that the `http`  in that address is really important. `https` wont work with compute
 
 
 #### List of Contents:
