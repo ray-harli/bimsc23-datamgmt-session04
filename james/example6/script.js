@@ -34,26 +34,26 @@ rhino3dm().then(async (m) => {
   console.log("Loaded rhino3dm.");
   rhino = m; // global
 
+  //Commenting off. First one mentioned would be the default loaded. 
   //Local Computer (Turn on / off by uncommenting the line below)
-  RhinoCompute.url = "http://localhost:8081/"; //if debugging locally.
+  //RhinoCompute.url = "http://localhost:8081/"; //if debugging locally.
 
   //Use MaCAD server (Turn on / off by uncommenting the two lines below) **Backslash at end every important
-  //RhinoCompute.url = 'http://35.157.191.153/' // RhinoCompute server url. Use http://localhost:8081 if debugging locally.
-  //RhinoCompute.apiKey = 'macad2023'  // RhinoCompute server api key. Leave blank if debugging locally.
+  RhinoCompute.url = 'http://35.157.191.153/' // RhinoCompute server url. Use http://localhost:8081 if debugging locally.
 
-  //Set API key
+  //Set API key, can leave blank if debugging locally. Needs to be left on if using option below.
   RhinoCompute.apiKey = 'macad2023' 
 
-  // Set default value above. If checkbox is checked, change to server. If changed again change back to local.
-  const computeCheckbox = document.getElementById("computeCheckbox");
-  computeCheckbox.addEventListener("change", function() {
-    if (computeCheckbox.checked) {
-      RhinoCompute.url = 'http://35.157.191.153/'
-    } else {
-      RhinoCompute.url = "http://localhost:8081/";
-    }
-    compute();
-  });
+  //Checkbox disabled. Would offer option to switch between local and remote compute
+  // const computeCheckbox = document.getElementById("computeCheckbox");
+  // computeCheckbox.addEventListener("change", function() {
+  //   if (computeCheckbox.checked) {
+  //     RhinoCompute.url = 'http://35.157.191.153/'
+  //   } else {
+  //     RhinoCompute.url = "http://localhost:8081/";
+  //   }
+  //   compute();
+  // });
 
   // load a grasshopper file!
 
