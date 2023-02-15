@@ -32,7 +32,10 @@ rhino3dm().then(async (m) => {
   console.log("Loaded rhino3dm.");
   rhino = m; // global
 
-  RhinoCompute.url = "http://localhost:8081/"; //if debugging locally.
+  RhinoCompute.url = 'http://35.157.191.153/' // RhinoCompute server url. Use http://localhost:8081 if debugging locally.
+  RhinoCompute.apiKey = 'macad2023'  // RhinoCompute server api key. Leave blank if debugging locally.
+
+  //RhinoCompute.url = "http://localhost:8081/"; //if debugging locally.
 
   // load a grasshopper file!
 
