@@ -24,4 +24,5 @@ you should be able to run your compute project in `http://www.datamgmt.com/{Your
 
 * [Example 5](http://www.data-mgmt.com/example5/): Shows that compute works in github pages
 * [Lora](http://www.data-mgmt.com/lora/): My example works in github pages
+* [Ren](http://www.data-mgmt.com/ren/example6/): Testing GH and Compute on Web
 * [James](http://www.data-mgmt.com/james/example6/): 🌭 Working 
