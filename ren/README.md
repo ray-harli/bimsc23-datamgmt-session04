@@ -11,6 +11,8 @@ These examples introduce how to use RhinoCompute as a remote geometry calculatio
 - [Example 4](example4): Adds objects to layers in the RhinoDoc
 - [Example 5](example5): How to use the latest version of three
 
+- [Example 6](example6): Testing GH Def with Sliders
+
 
 
 
