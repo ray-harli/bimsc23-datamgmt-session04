@@ -23,4 +23,5 @@ you should be able to run your compute project in `http://www.datamgmt.com/{Your
 #### List of Contents:
 
 * [Example 5](http://www.data-mgmt.com/example5/): Shows that compute works in github pages
+* [YourName](http://www.data-mgmt.com/[YourFolder]/): Shows that compute works in github pages
 * [Lora](http://www.data-mgmt.com/lora/): Shows that compute works in github pages
