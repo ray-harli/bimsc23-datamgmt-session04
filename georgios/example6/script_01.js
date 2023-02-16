@@ -49,9 +49,10 @@ rhino3dm().then(async m => {
 
     //RhinoCompute.url = getAuth( 'RHINO_COMPUTE_URL' ) // RhinoCompute server url. Use http://localhost:8081 if debugging locally.
     //RhinoCompute.apiKey = getAuth( 'RHINO_COMPUTE_KEY' )  // RhinoCompute server api key. Leave blank if debugging locally.
-    
-    RhinoCompute.url = 'http://localhost:8081/' //if debugging locally.
 
+ // RhinoCompute.url = "http://localhost:8081/"; //if debugging locally.
+ RhinoCompute.url = "http://35.157.191.153/"; //if debugging locally.
+ RhinoCompute.apiKey = "macad2023"
 
     // load a grasshopper file!
     const url = definitionName
@@ -197,7 +198,3 @@ function meshToThreejs(mesh, material) {
     return new THREE.Mesh(geometry, material)
 }
 
-const downloadButton = document.getElementById("downloadButton")
-downloadButton.onclick = download
-
-// var image = renderer.Element.toImage
