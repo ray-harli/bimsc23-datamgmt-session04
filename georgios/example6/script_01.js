@@ -123,6 +123,39 @@ async function compute() {
     }
 
 
+
+ //decode grasshopper objects and put them into a rhino document
+ for (let i = 0; i < res.values.length; i++) {
+    for (const [key, value] of Object.entries(res.values[i].InnerTree)) {
+      for (const d of value) {
+        const data = JSON.parse(d.data);
+        const rhinoObject = rhino.CommonObject.decode(data);
+        doc.objects().add(rhinoObject, null);
+      }
+    }
+  }
+
+
+
+  // go through the objects in the Rhino document
+
+  let objects = doc.objects();
+  for ( let i = 0; i < objects.count; i++ ) {
+  
+    const rhinoObject = objects.get( i );
+
+
+     // asign geometry userstrings to object attributes
+    if ( rhinoObject.geometry().userStringCount > 0 ) {
+      const g_userStrings = rhinoObject.geometry().getUserStrings()
+      rhinoObject.attributes().setUserString(g_userStrings[0][0], g_userStrings[0][1])
+      
+    }
+  }
+
+
+
+
     // clear objects from scene
     scene.traverse(child => {
         if (!child.isLight) {
