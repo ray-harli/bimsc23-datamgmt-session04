@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <title>Bonus_GeorgiosBekakos</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+          </head>
+    </head>
+
+
+    <body>
+        <h1 class="main-title">Voxel Cube</h1>
+
+
+        <div id="loader"> </div>
+
+            <div id="overlay">
+                <div>
+                    <input type="range" id="X Transform" name="X Transform" min="1" max="50" value="12" step="1">
+                    <label for="X Transform">X</label>
+                </div>
+                <div>
+                    <input type="range" id="Y Transform" name="Y Transform" min="1" max="50" value="12" step="1">
+                    <label for="Y Transform">Y</label>
+                </div>
+                <div>
+                    <input type="range" id="Z Transform" name="Z Transform" min="1" max="50" value="12" step="1">
+                    <label for="Z Transform">Z</label>
+                </div>
+                <div>
+                    <input type="range" id="Populate Count" name="Populate Count" min="1" max="10" value="3" step="1">
+                    <label for="Populate Count">Void Weight</label>
+                </div>
+
+                <div>
+                    <input type="range" id="Deconstruct" name="Deconstruct" min="1" max="100" value="40" step="1">
+                    <label for="General Transform">Deconstruct</label>
+                </div>
+                <div>
+                    <input type="range" id="Seed" name="Seed" min="1" max="10" value="2" step="1">
+                    <label for="Seed">Seed</label>
+                </div>
+                <div>
+                    <input type="range" id="General Transform" name="General Transform" min="10" max="50" value="10" step="1">
+                    <label for="General Transform">Global</label>
+                </div>
+
+            </div>
+        </div>
+        <script type="importmap">
+			{
+				"imports": {
+				  "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+				  "three/addons/": "https://unpkg.com/three@0.147.0/examples/jsm/",
+                  "rhino3dm": "https://unpkg.com/rhino3dm@0.15.0-beta/rhino3dm.module.js",
+                  "rhinocompute": "https://cdn.jsdelivr.net/npm/compute-rhino3d@0.13.0-beta/compute.rhino3d.module.js"
+				}
+			  }
+		  </script>
+        <script type="module" src="script_01.js"></script>
+
+        
+
+
+    </body>
+</html>

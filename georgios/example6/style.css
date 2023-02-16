@@ -1,0 +1,126 @@
+.main-title {
+  font-family: Futura, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 48px;
+  margin-top: 100px;
+}
+
+
+/* Style for Subtitle */
+.p {
+  font-family: Futura , sans-serif;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+p {
+  font-family: Futura, sans-serif;
+  text-align: center;
+}
+
+
+
+canvas {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* set a specific width for the canvas */
+  border: 2px dotted rgb(211, 211, 211);
+  border-radius: 300px;
+  box-shadow: 0 0 0 10px rgb(255, 255, 255);
+}
+
+body { margin: 0; }
+
+/* CSS for a spinning animation */ 
+#loader {
+          border: 5px solid #f3f3f3; /* Light grey */
+          border-top: 5px solid #3d3d3d; /* Grey */
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          animation: spin 1s linear infinite;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+
+      /* style user strings pop-up */
+      #container {
+          position: absolute;
+          z-index: 100;
+          top: 440;
+          margin: 10px;
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.274);
+          color: white;
+          width: 280px;
+          font-family: monospace;
+      }
+
+      table { border: none; border-collapse: collapse; }
+      table td {
+          border-left: 1px solid white;
+          padding: 10px;
+      }
+      table td:first-child { border-left: none; }
+ 
+
+      body {
+        background-color: black;
+      }
+      
+      .main-title {
+        text-align: center;
+        color: white;
+      }
+      
+      #overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 60px;
+      }
+      
+      input[type="range"] {
+        width: 100%;
+        background-color: black;
+        appearance: none;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+      
+      input[type="range"]::-webkit-slider-thumb {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      label {
+        color: white;
+        font-size: 12px;
+        text-align: center;
+      }
+      

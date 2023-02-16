@@ -26,3 +26,4 @@ you should be able to run your compute project in `http://www.datamgmt.com/{Your
 * [Lora](http://www.data-mgmt.com/lora/): My example works in github pages
 * [Ren](http://www.data-mgmt.com/ren/example6/): Testing GH and Compute on Web
 * [James](http://www.data-mgmt.com/james/example6/): 🌭 Working 
+* [Georgios](http://www.data-mgmt.com/georgios/example6/): 01010101 
